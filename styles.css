@@ -13,7 +13,9 @@ h1 {
 
 footer {
   color: #DBEDF3;
+  opacity: 50%;
   font-family: sans-serif;
+  padding-top: 90px;
 }
 
 .w {
