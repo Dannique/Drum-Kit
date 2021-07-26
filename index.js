@@ -1,7 +1,7 @@
 //clicking
 for (var i = 0; i < document.querySelectorAll(".drum").length; i++) {
 
-  document.querySelectorAll(".drum")[i].addEventListener('click', function () {
+  document.querySelectorAll(".drum")[i].addEventListener('click', () => {
 
     var buttonInnerHTML = this.innerHTML;
     pressKeySound(buttonInnerHTML);
@@ -9,7 +9,7 @@ for (var i = 0; i < document.querySelectorAll(".drum").length; i++) {
   });
 };
 
-document.addEventListener("keydown", function (event) {
+document.addEventListener("keydown", (event) => {
   pressKeySound(event.key);
   buttonAnimation(event.key);
 });
@@ -56,11 +56,11 @@ function pressKeySound(key) {
   }
 }
 
-function buttonAnimation(currentKey) {
+const buttonAnimation = (currentKey) => {
   var buttonActive = document.querySelector('.' + currentKey);
   buttonActive.classList.add('pressed');
 
-  setTimeout(function () {
+  setTimeout(() => {
     buttonActive.classList.remove('pressed');
   }, 120);
   
