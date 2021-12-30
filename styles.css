@@ -1,21 +1,38 @@
+html{
+  height: 100vh;
+}
 body {
   text-align: center;
   background-color: #283149;
+  margin: 0;
+
 }
 
 h1 {
-  font-size: 5rem;
-  color: #DBEDF3;
+  font-size: 5.3rem;
+  color: #DA0463;
   font-family: "Arvo", cursive;
-  text-shadow: 3px 0 cyan;
+  text-shadow: 3px 0 #18191a;
 
 }
 
 footer {
   color: #DBEDF3;
-  opacity: 50%;
+  opacity: 30%;
   font-family: sans-serif;
-  padding-top: 90px;
+  position:absolute;
+  bottom: 5px;
+  left:48%;
+  /* padding-top: 100px; */
+}
+
+.title{
+  margin:0;
+}
+
+.emote{
+  text-shadow: none;
+  font-weight: 100;
 }
 
 .w {
@@ -47,21 +64,7 @@ footer {
 }
 
 .set {
-  margin: 10% auto;
-}
-
-.game-over {
-  background-color: red;
-  opacity: 0.8;
-}
-
-.pressed {
-  box-shadow: 0 3px 4px 0 #DBEDF3;
-  opacity: 0.5;
-}
-
-.red {
-  color: red;
+  margin: 7% auto;
 }
 
 .drum {
@@ -72,12 +75,17 @@ footer {
   line-height: 2;
   font-weight: 900;
   color: #DA0463;
-  text-shadow: 3px 0 #DBEDF3;
+  text-shadow: 4px 0 #18191a;
   border-radius: 15px;
   display: inline-block;
   width: 150px;
   height: 150px;
   text-align: center;
   margin: 10px;
-  background-color: white;
+  background-color: rgb(255, 235, 235);
+}
+
+.pressed {
+  box-shadow: 0 3px 4px 0 #282b2c;
+  opacity: 0.4;
 }
